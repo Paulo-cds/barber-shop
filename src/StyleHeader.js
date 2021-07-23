@@ -8,6 +8,22 @@ import color from './pages/Home'
  export const Head = styled.header `
                 //padding: 30px 0;
                 background-color: #191919;
+                
+
+                @media(max-width:1000px){
+                    display:none;
+                }
+            `
+            export const Hamburguer = styled.div`
+                background-color: #191919;
+                
+                display: none;
+
+                @media(max-width:1000px){
+                    display: flex;
+                    justify-content: space-between;
+                    height: 10rem;
+                }
             `
 
             export const Navi = styled.nav`
@@ -21,15 +37,30 @@ import color from './pages/Home'
                 display: flex;
             `
 
+            export const DivLogo = styled.div`
+                position: absolute;                
+                margin: .3rem auto;
+                left: 30%;      
+
+                @media(min-width:501px) and (max-width:650px){
+                    left:25%;
+                }
+
+                @media(max-width: 500px){
+                    left:23%;
+                }
+            `
+
             export const Logo = styled.img`
-                margin: 0 30px; 
+                margin: .30rem 1.87rem;  
+                width: 70%;                              
             `
 
             export const Item = styled.li`
                 display:flex;
                 align-items: center;  
                // font-family: 'Poppins', sans-serif;
-                width: 150px;
+                width: 9.37rem;
                 justify-content: center;
                 
 
@@ -43,8 +74,8 @@ import color from './pages/Home'
                 text-transform: uppercase;
                 text-decoration: none;
                 font-weight: bold;
-                font-size:12px;
-                padding: 20px;
+                font-size:.75rem;
+                padding: 1.25rem;
                 :hover{
                 border-bottom:1px solid ${colorPrimary}; 
                 color: ${colorPrimary};

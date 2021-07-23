@@ -9,7 +9,9 @@ import { Link, animateScroll as scroll } from "react-scroll"
             export const Body = styled.div`
                 background-image: url(${background});
                 height: 100vh;
+                width: 100%;
                 background-size: cover;
+                background-repeat: no-repeat;                
                 position: relative;
                 //padding: 40px 0;
                 background-attachment: fixed;
@@ -66,15 +68,19 @@ import { Link, animateScroll as scroll } from "react-scroll"
             /**********Banner*********/
 
             export const Banner = styled.div`
-            color: white;
-            text-align:center;    
-            position: absolute;
-            top: 50%;
-            left:50%;
-            height: 270px;
-            width:750px;
-            margin-left:-375px;
-            margin-top:-75px;
+                color: white;
+                text-align:center;    
+                position: absolute;
+                top: 50%;
+                left:50%;
+                height: 16,87rem;
+                width:46,87rem;
+                margin-left:-25%;
+                margin-top:-15%;
+
+                @media(max-width:1000px){
+                    margin-left: -45%;
+                }
             `
 
             export const Slogan1 = styled.span`
