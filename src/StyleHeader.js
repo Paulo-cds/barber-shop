@@ -87,6 +87,26 @@ import color from './pages/Home'
                 
             }
             `
+
+    export const GoTopo = styled.div`        
+        position: fixed;
+        width: 2%;
+        bottom: 1%;
+        left: 1%;
+        z-index: 99;                
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+
+        &:hover{
+            cursor:pointer;
+        }
+    `
+
+    export const ImgTop = styled.img`
+         width: 100%;
+        background: white;
+        border-radius: 100%;
+    `
             
 
             

@@ -1,4 +1,5 @@
 import logo from './images/logo.png'
+import upTop from './images/gotop.png'
 import logotwo from './images/much-img.png'
 import {useState} from 'react'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
@@ -36,6 +37,8 @@ import {
     styleLink,    
     Hamburguer,
     DivLogo,
+    GoTopo,
+    ImgTop,
 } from './StyleHeader'
 
 const Linked = styled(Link)`
@@ -117,11 +120,24 @@ function Header (color) {
     const classes = useStyles();
     const theme = useTheme();
     const [open, setOpen] = useState(false);
+    const [up, setUp] = useState('none')
   
     const handleDrawer = () => {
       setOpen(!open);
     };
   
+    window.addEventListener('scroll', function(){
+        if(this.window.pageYOffset > 250){
+            setUp('block');
+        } else {
+            setUp('none');
+        }
+    })
+    
+    function top() {
+        window.scrollTo({top: 0,left: 0 , behavior: 'smooth'});
+        console.log('vai topo')
+    }
     
     
     
@@ -270,6 +286,10 @@ function Header (color) {
                             </List>
                         </Navi>
         </Head>
+
+            <GoTopo onClick={top} style={{display:up}}>
+                <ImgTop src={upTop}/>
+            </GoTopo>
         </>
     )
 }
