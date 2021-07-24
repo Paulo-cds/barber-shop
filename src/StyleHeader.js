@@ -40,14 +40,18 @@ import color from './pages/Home'
             export const DivLogo = styled.div`
                 position: absolute;                
                 margin: .3rem auto;
-                left: 30%;      
+                left: 35%;      
 
                 @media(min-width:501px) and (max-width:650px){
                     left:25%;
                 }
 
-                @media(max-width: 500px){
-                    left:23%;
+                @media(min-width: 371px) and (max-width: 500px){
+                    left:30%;
+                }
+
+                @media(max-width: 370px){
+                    left:25%;
                 }
             `
 

@@ -78,26 +78,53 @@ import { Link, animateScroll as scroll } from "react-scroll"
                 margin-left:-25%;
                 margin-top:-15%;
 
-                @media(max-width:1000px){
+                @media (max-width:1000px){
                     margin-left: -45%;
+                }
+
+                @media (min-width:601px) and (max-width:742px){
+                    top: 35%;
+                }
+
+                @media(max-width:600px){
+                    top: 30%;
                 }
             `
 
             export const Slogan1 = styled.span`
             color: ${colorPrimary};
             text-transform: uppercase;
-            letter-spacing: 4px;
-            font-size: 14px;
+            letter-spacing: 0.25rem;
+            font-size: 1.14rem;
+
+                @media(max-width:450px){
+                    font-size: 1rem;
+                }
+
             `
 
             export const Slogan2 = styled.span`
             margin-bottom:15px;
             display: block;
+
+                @media(max-width:370px){
+                    font-size: .8rem;
+                }
+
             `
 
             export const Tittle = styled.h1`
-            font-size: 120px;
+            font-size: 7.5rem;
             margin: 30px 0;
+
+                @media (min-width:371px) and (max-width:450px){
+                    font-size: 6.5rem;
+                }
+
+                @media(max-width:370px){
+                    font-size: 5.5rem;
+                }
+
             `
 
             export const SecondLogo = styled.img``
