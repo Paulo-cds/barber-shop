@@ -1,4 +1,4 @@
-import {colorPrimary} from './Colors'
+import {colorPrimary, colorPrimaryLight} from './Colors'
 import {colorSecondary} from './Colors'
 import styled from 'styled-components'
 
@@ -9,6 +9,11 @@ export const Containerr = styled.div`
   width: 1170px;
   margin: 0 auto;
   display:flex;
+
+   @media(max-width: 1000px) {
+       display: block;
+       
+   }
 `
 
 
@@ -17,19 +22,51 @@ export const About = styled.section`
     //font-family: sans-serif;
     display:flex;
     padding-bottom:40px;
+    min-height: 85vh;
 `
-export const Timing = styled.div`
-    width: 33%;
+export const Timing = styled.div`    
     background-image: url(${brushBig});
     padding: 20px;
     position: relative;
-    top: -50px;
+    top: -1.87rem;
+    background-repeat: no-repeat;
+    left: -.5%;
+
+    @media(max-width: 1000px){
+        background-image: none;
+    }    
+
+    
 `
 
 export const Overlay = styled.div`
     background: rgba(0,0,0,0.8);
     text-align: center;
     padding: 40px 20px;
+
+    @media(max-width: 1000px){
+        display: none;
+        
+    }    
+`
+
+export const Overlay2 = styled.div`
+    display:none;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    padding: 40px 20px;
+    border: 2px solid ${colorPrimaryLight};
+    margin: 0 auto;
+
+    @media(max-width: 1000px){
+        display: block;
+        
+    }    
+`
+
+export const Over = styled.div`
+    display:flex;
+    justify-content: space-between;
 `
 
 
@@ -55,6 +92,10 @@ export const Text = styled.div`
         color: white;
         font-size: 25px;
         margin-top: 10px;
+
+        @media(max-width: 1000px){
+        display: none;    
+        }  
     }
     :last-of-type:after{
         content: '|';
@@ -74,11 +115,22 @@ export const Funcionamento = styled.span`
     display: block;
 `
 
+export const Timers = styled.div`
+    display: flex;
+    @media (max-width: 560px){
+        display: block;
+    }
+`
+
 export const Experience = styled.div`
     width: 66%;
     color: white;
     margin-left: 7%;
-    margin-top: 100px;    
+    margin-top: 100px;  
+
+    @media(max-width: 1000px){
+        margin: 3rem auto 0 7%;    
+    }    
     
 `
 
@@ -102,14 +154,35 @@ export const Years = styled.h2`
 export const Texto = styled.div`
     display: flex;
     justify-content: space-between;
+    position: relative;
+
+    @media(max-width: 1000px){
+        width: 90%;
+    }
+
+    @media(max-width: 680px){
+        width: 80%;
+    }
 `
 
-export const Textox = styled.div``
+export const Textox = styled.div`
+    z-index: 1;
+`
 
-export const Shave = styled.img``
+export const Shave = styled.img`
+    @media(max-width: 1000px){        
+        z-index: 0;
+        width: 50%; 
+        position: absolute;        
+        right: 0;
+        bottom: 0;
+        margin-right:-50%;
+    }
+`
 
 export const Parag = styled.p`
     margin-bottom: 20px;
     font-weight: 100;
     font-size: 17px;
+    
 `

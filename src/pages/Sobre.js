@@ -12,16 +12,19 @@ import {
     Experience,
     Containerr,
     Overlay,
+    Overlay2,
+    Over,
     Classic,
     Horarios,
     Text,
     H4,
     Funcionamento,
+    Timers,
     Loc,
     History,
     Years,
     Texto,
-    Shave,
+    Shave,    
     Parag,
     Textox,
 } from '../styles/StyleSobre'
@@ -68,6 +71,48 @@ function Sobre() {
                            (11)99999-9999
                         </Funcionamento>
                     </Overlay>
+
+                    <Overlay2>   
+                        <Classic src={ClassicCut}/>                                             
+                        <Horarios>
+                            Horários
+                        </Horarios>
+                        <Over>
+                            <Timers>
+
+                                <Text>
+                                    <H4>Segunda-feira à Sexta-feira</H4>
+                                    <Funcionamento>09:00 AM - 17:00 PM</Funcionamento>
+                                </Text>
+
+                                <Text>
+                                    <H4>Sábado</H4>
+                                    <Funcionamento>09:00 AM - 14:00 PM</Funcionamento>
+                                </Text>
+
+                                <Text>
+                                    <H4>Domingo</H4>
+                                    <Funcionamento>Fechado</Funcionamento>
+                                </Text>
+                            </Timers>
+                            
+                            <Timers>
+
+                                <Funcionamento>
+                                <Loc src={Local} />
+                                <br/>
+                                    Rua da Matrix, 33
+                                </Funcionamento>
+                                
+                                
+                                <Funcionamento style={{marginTop: '20px',}}>
+                                <Loc src={Phone}  />
+                                <br/>
+                                (11)99999-9999
+                                </Funcionamento>
+                            </Timers>
+                        </Over>
+                    </Overlay2>
                 </Timing>
                 <Experience>
                     <History>Uma história única</History>
@@ -81,8 +126,8 @@ function Sobre() {
                             <Parag>
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                             </Parag>
-                        </Textox>
-                        <Shave  src={Shaveb}/>
+                        </Textox>                        
+                        <Shave  src={Shaveb}/>                        
                     </Texto>
                 </Experience>
             </Containerr>
