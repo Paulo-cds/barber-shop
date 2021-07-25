@@ -7,7 +7,7 @@ import {colorPrimary, colorPrimaryLight, colorTri} from './Colors'
 
 export const Page = styled.div`
     background-color: ${colorPrimary};
-    height: 100vh;    
+    min-height: 100vh;    
     padding-bottom: 100px;
     background-image: url(${BackgroundImg});
     background-repeat: no-repeat;
@@ -31,7 +31,10 @@ export const Heading = styled.img`
 `
 
 export const Formulario  = styled.form`
-    margin-top: 80px;
+    margin: 80px auto 0;
+    width: 90%;
+    display: grid;
+    place-items: center;
 `
 
 export const Lab = styled.label`
@@ -68,13 +71,34 @@ export const FormDiv = styled.div`
     :last-of-type{
         margin-right: 0;
     }
+
+    @media(max-width: 700px){
+        display: block;
+        margin: .5rem 0;
+    }
+`
+
+export const PersonalDiv = styled.div`
+    display: flex;
+    margin: 0;
+
+    @media(max-width: 700px){
+        display: block;
+        margin: .5rem 1rem;
+    }
 `
 
 
 export const PersonalData = styled.div`
     display: flex;
-    justify-content: space-between;    
+    justify-content: center;    
     margin-bottom: 20px;
+    width:100%;
+
+    @media(max-width: 375px){
+        display: block;
+        margin: .5rem 0;
+    }
 `
 
 export const Message = styled.textarea`

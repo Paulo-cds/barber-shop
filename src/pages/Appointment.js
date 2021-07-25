@@ -12,6 +12,7 @@ import {
     Sel,
     Opt,
     Botao,
+    PersonalDiv,
 } from '../styles/StyleAppointment'
 
 import Headerr from '../Header'
@@ -38,25 +39,32 @@ function Appointment() {
 
                     <Formulario>  
                         <PersonalData>
-                            <FormDiv>
-                                <Lab>Nome</Lab>
-                                <Entry placeholder="Digite seu Nome"></Entry>
-                            </FormDiv>
-                            <FormDiv>
-                                <Lab>E-mail</Lab>
-                                <Entry placeholder="Digite seu E-mail"></Entry>
-                            </FormDiv>
-                            <FormDiv>
-                                <Lab>Telefone</Lab>
-                                <Entry placeholder="Digite seu Telefone"></Entry>
-                            </FormDiv>
-                            <FormDiv>
-                                <Lab>Tipo de Serviço</Lab>
-                                <Sel>
-                                    <Opt value="">Cortar Cabelo</Opt>
-                                    <Opt value="">Cortar Cabelo e Barba</Opt>
-                                </Sel>
-                            </FormDiv>
+                            <PersonalDiv>
+
+                                <FormDiv>
+                                    <Lab>Nome</Lab>
+                                    <Entry placeholder="Digite seu Nome"></Entry>
+                                </FormDiv>
+                                <FormDiv style={{marginRight: '50px',}}>
+                                    <Lab>E-mail</Lab>
+                                    <Entry placeholder="Digite seu E-mail"></Entry>
+                                </FormDiv>
+                            </PersonalDiv>
+
+                            <PersonalDiv>
+
+                                <FormDiv>
+                                    <Lab>Telefone</Lab>
+                                    <Entry placeholder="Digite seu Telefone"></Entry>
+                                </FormDiv>
+                                <FormDiv>
+                                    <Lab>Tipo de Serviço</Lab>
+                                    <Sel>
+                                        <Opt value="">Cortar Cabelo</Opt>
+                                        <Opt value="">Cortar Cabelo e Barba</Opt>
+                                    </Sel>
+                                </FormDiv>
+                            </PersonalDiv>
                         </PersonalData> 
 
 
