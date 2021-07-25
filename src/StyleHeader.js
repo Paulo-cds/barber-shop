@@ -97,6 +97,14 @@ import color from './pages/Home'
         -webkit-transition: all 1s ease;
         transition: all 1s ease;
 
+        @media (min-width: 426px) and (max-width: 768px){
+            width: 4%;
+        }
+
+        @media(max-width: 425px){
+            width: 6%;
+        }
+
         &:hover{
             cursor:pointer;
         }
