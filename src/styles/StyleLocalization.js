@@ -48,11 +48,20 @@ export const Info = styled.div`
 export const DivInfo = styled.div`
     display: flex;
     justify-content: space-between;
+    width: 50%;
+
+    &:fisrt-child{
+        margin-right: 6%;
+    }
+
+    &:last-child{
+        margin-left: 8%;
+    }
 
     @media(max-width: 1000px){
         display: grid;
         place-items: center;
-        
+        margin: 0;
     }
 `
 
