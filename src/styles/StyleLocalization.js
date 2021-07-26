@@ -15,11 +15,45 @@ export const Head = styled.div`
     padding: 40px;
     width: 93,5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
+
+    @media(max-width: 375px)  {
+        display: grid;
+        place-items: center;
+    }
 `
 export const Info = styled.div`
     display: flex;
-    align-items: center;
+    align-items: center;  
+
+    &:last-child{
+        margin-left: 1.5rem;
+    }  
+
+    @media(max-width: 1000px){        
+        margin: .5rem auto;
+        
+
+        &:last-child{
+        margin-left: 0;
+        } 
+    }
+
+    @media(max-width: 425px){
+        display: grid;
+        place-items: center;
+    }
+`
+
+export const DivInfo = styled.div`
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: 1000px){
+        display: grid;
+        place-items: center;
+        
+    }
 `
 
 export const  Icon = styled.div`
@@ -32,8 +66,21 @@ export const  Icon = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media(max-width: 425px){
+        display: none;
+    }
 `
-export const Text = styled.div``
+export const Text = styled.div`
+    width: 50%;
+    flex-wrap: wrap;
+
+    @media(max-width: 375px)  {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+`
 
 export const ImgInfo = styled.img``
 
@@ -45,7 +92,12 @@ export const Span1 = styled.span`
 
 export const Span2 = styled.span`
     font-size: 13px;
-    color: white;
+    color: white;  
+     
+
+    @media(max-width: 375px)  {
+        margin-left: 1rem;
+    } 
 `
 
 

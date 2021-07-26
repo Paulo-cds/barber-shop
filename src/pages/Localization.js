@@ -19,47 +19,51 @@ function Localization(){
             <Headerr />
             <S.Location>
                 
-                <Containerr>
+                <Containerr style={{width: '90%',}}>
                     <S.Head>
-                        <S.Info>
-                            <S.Icon>
-                                <S.ImgInfo src={Map1}/>
-                            </S.Icon>
-                            <S.Text>
-                                <S.Span1>Localização</S.Span1>
-                                <S.Span2>Rua da Matrix, 33</S.Span2>
-                            </S.Text>
-                        </S.Info>
+                        <S.DivInfo>
+                            <S.Info>
+                                <S.Icon>
+                                    <S.ImgInfo src={Map1}/>
+                                </S.Icon>
+                                <S.Text>
+                                    <S.Span1>Localização:</S.Span1>
+                                    <S.Span2>Rua da Matrix, 33</S.Span2>
+                                </S.Text>
+                            </S.Info>
 
-                        <S.Info>
-                            <S.Icon>
-                                <S.ImgInfo src={Map2}/>
-                            </S.Icon>
-                            <S.Text>
-                                <S.Span1>Telefone</S.Span1>
-                                <S.Span2>(11)99999-9999</S.Span2>
-                            </S.Text>
-                        </S.Info>
+                            <S.Info>
+                                <S.Icon>
+                                    <S.ImgInfo src={Map2}/>
+                                </S.Icon>
+                                <S.Text>
+                                    <S.Span1>Telefone:</S.Span1>
+                                    <S.Span2>(11)99999-9999</S.Span2>
+                                </S.Text>
+                            </S.Info>
+                        </S.DivInfo>
 
-                        <S.Info>
-                            <S.Icon>
-                                <S.ImgInfo src={Map3}/>
-                            </S.Icon>
-                            <S.Text>
-                                <S.Span1>E-mail</S.Span1>
-                                <S.Span2>contato@barbershop.com</S.Span2>
-                            </S.Text>
-                        </S.Info>
+                        <S.DivInfo>
+                            <S.Info>
+                                <S.Icon>
+                                    <S.ImgInfo src={Map3}/>
+                                </S.Icon>
+                                <S.Text>
+                                    <S.Span1>E-mail:</S.Span1>
+                                    <S.Span2>contato@barbershop.com</S.Span2>
+                                </S.Text>
+                            </S.Info>
 
-                        <S.Info>
-                            <S.Icon>
-                                <S.ImgInfo src={Map4}/>
-                            </S.Icon>
-                            <S.Text>
-                                <S.Span1>Horário</S.Span1>
-                                <S.Span2>Seg. à Sex: 9AM às 17PM</S.Span2>
-                            </S.Text>
-                        </S.Info>
+                            <S.Info>
+                                <S.Icon>
+                                    <S.ImgInfo src={Map4}/>
+                                </S.Icon>
+                                <S.Text>
+                                    <S.Span1>Horário:</S.Span1>
+                                    <S.Span2>Seg. à Sex: 9AM às 17PM</S.Span2>
+                                </S.Text>
+                            </S.Info>
+                        </S.DivInfo>
                     </S.Head>                 
                     <S.Map>
                         <Maps />
